@@ -1,77 +1,170 @@
 @font-face {
-    font-family: por;
-    src: url(/fonts/ProstoOne-Regular.ttf) format(truetype);
+  font-family: Aquire;
+  src: url(/fonts/AquireBold.otf) format(opentype);
 }
+@font-face {
+  font-family: Prosto-One;
+  src: url(/fonts/ProstoOne-Regular.ttf) format(truetype);
+}
+@font-face {
+  font-family: Play-Fair;
+  src: url(/fonts/PlayfairDisplay.ttf) format(truetype);
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
-html{
-    font-size: 10px;
+html {
+  font-size: 10px;
 }
 
-body{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
 }
 
 /*body--main code for hero page begins here*/
 /*making all the section(header, main, footer) to have there own spaces*/
-header{
-    height: 10%;
-    margin:0 16px;
+header {
+  height: 10%;
+  margin: 0 16px;
 }
-main{
-    height: 85%;
-    margin:0 16px;
-    background-color: blueviolet;
+main {
+  height: 85%;
+  margin: 0 16px;
+  display: flex;
+  flex-direction: row;
 }
-footer{
-    height: 5%;
-    margin:0 16px;
-    background-color: rgb(43, 226, 119);
+footer {
+  height: 5%;
+  margin: 0 16px;
+  padding: 0 4px;
 }
 /*header part starts*/
-header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 /*header-----h1 the hero logo styling starts here*/
-#hero-logo{
-    font-size: 4em;
-    width: 20%;
+#hero-logo {
+  font-size: 4em;
+  font-family: "Aquire", sans-serif;
+  width: 20%;
 }
-.logo-c{
-    color: red;
-}
-/*header-----nav-(hero-nav) styling starts here*/
-#hero-nav{
-    display: flex;
-    font-size: 1.8rem;
-    width: 40%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-#hero-nav a{
-    font-family: "por", sans-serif;
-    text-decoration: none;
-    color: black;
+.logo-c {
+  color: red;
 }
 /*header-----nav-(hero-nav) styling starts here*/
-#hero-history{
-    font-size: 1.8rem;
-    font-family: "por", sans-serif;
-    flex-direction: row;
-    align-items: center;
+#hero-nav {
+  display: flex;
+  font-size: 1.8rem;
+  width: 40%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
-
+#hero-nav a {
+  font-family: "Prosto-One", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+/*header-----nav-(hero-nav) styling starts here*/
+#hero-history {
+  font-size: 1.8rem;
+  font-family: "Prosto-One", sans-serif;
+  flex-direction: row;
+  align-items: center;
+  background: linear-gradient(#ae8625, #f7ef8a, #d2ac47, #edc967);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 
 /*mainbody part starts*/
+/*mainbody----maindailog part starts from here*/
+#main-dailogue {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 60%;
+  justify-content: center;
+}
+.hero-name {
+  font-family: "Play-fair", sans-serif;
+  font-weight: bolder;
+  font-size: 4rem;
+  color: #3d0384;
+}
+.m-text {
+  font-family: Impact, "Times New Roman", Times, serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.m-textextra {
+  font-family: "Times New Roman", Times, serif, sans-serif;
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+.hero-subtitle {
+  color: #3c525b;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.special-word {
+  color: #ffb310;
+}
+
+/*mainbody----mainheroimage IMAGE part starts from here*/
+#main-hero-image {
+  box-sizing: border-box;
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-image {
+  object-fit: contain;
+  width: 90%;
+  border-radius: 99% 22% 22% 22%;
+}
+
+#main-socials {
+  bottom: 0px;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.ms-links {
+  height: 30px;
+  width: 30px;
+  margin: 0 5px;
+}
 /*footer part starts*/
+footer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid black;
+}
+
+.footer-copyright {
+  font-size: 1.5rem;
+}
+.footer-links a {
+  font-family: "Prosto-One", sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
